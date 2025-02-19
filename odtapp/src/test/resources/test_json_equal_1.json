@@ -1,0 +1,39 @@
+{
+  "name": "test_directory",
+  "type": "directory",
+  "children": [
+    {
+      "name": "subdir1",
+      "type": "directory",
+      "children": [
+        {
+          "name": "test_file1.odt",
+          "type": "file",
+          "error": "Reading error. It might not be a valid ODT file. Error message: zip file is empty"
+        }
+      ]
+    },
+    {
+      "name": "subdir2",
+      "type": "directory",
+      "children": [
+        {
+          "name": "subsubdir1",
+          "type": "directory",
+          "children": [
+            {
+              "name": "test_file3.odt",
+              "type": "file",
+              "error": "Reading error. It might not be a valid ODT file. Error message: zip file is empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "test_file5.odt",
+      "type": "file",
+      "error": "Reading error. It might not be a valid ODT file. Error message: zip file is empty"
+    }
+  ]
+}

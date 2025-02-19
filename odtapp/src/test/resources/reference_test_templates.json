@@ -1,0 +1,195 @@
+{
+  "name": "test_templates",
+  "type": "directory",
+  "children": [
+    {
+      "name": "block_1.odt",
+      "type": "file"
+    },
+    {
+      "name": "block_1a.odt",
+      "type": "file"
+    },
+    {
+      "name": "block_2.odt",
+      "type": "file"
+    },
+    {
+      "name": "common",
+      "type": "directory",
+      "children": [
+        {
+          "name": "footer_1.odt",
+          "type": "file"
+        },
+        {
+          "name": "footer_2.odt",
+          "type": "file"
+        },
+        {
+          "name": "header_1.odt",
+          "type": "file"
+        },
+        {
+          "name": "header_2.odt",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "subdirectory",
+      "type": "directory",
+      "children": [
+        {
+          "name": "subsubdirectory1",
+          "type": "directory",
+          "children": [
+            {
+              "name": "subsubsubdirectory",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "template_07.odt",
+                  "type": "file",
+                  "importBlocks": [
+                    "[import block_1.odt]",
+                    "[import footer_1.odt]",
+                    "[import header_1.odt]"
+                  ]
+                },
+                {
+                  "name": "template_08.odt",
+                  "type": "file",
+                  "importBlocks": [
+                    "[import block_2.odt]",
+                    "[import footer_2.odt]",
+                    "[import header_2.odt]"
+                  ]
+                },
+                {
+                  "name": "template_12.odt",
+                  "type": "file",
+                  "importBlocks": [
+                    "[import block_1.odt]",
+                    "[import block_1a.odt]",
+                    "[import footer_1.odt]",
+                    "[import header_1.odt]"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "template_01.odt",
+              "type": "file",
+              "importBlocks": [
+                "[import block_1.odt]",
+                "[import block_1a.odt]",
+                "[import footer_1.odt]",
+                "[import header_1.odt]"
+              ]
+            },
+            {
+              "name": "template_05.odt",
+              "type": "file",
+              "importBlocks": [
+                "[import block_1.odt]",
+                "[import footer_1.odt]",
+                "[import header_1.odt]"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "subsubdirectory3",
+          "type": "directory",
+          "children": [
+            {
+              "name": "template_09.odt",
+              "type": "file",
+              "importBlocks": [
+                "[import block_1.odt]",
+                "[import footer_1.odt]",
+                "[import header_1.odt]"
+              ]
+            },
+            {
+              "name": "template_10.odt",
+              "type": "file",
+              "importBlocks": [
+                "[import block_2.odt]",
+                "[import footer_2.odt]",
+                "[import header_2.odt]"
+              ]
+            },
+            {
+              "name": "template_11.odt",
+              "type": "file",
+              "importBlocks": [
+                "[import block_1.odt]",
+                "[import footer_1.odt]",
+                "[import header_1.odt]"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "subdirectory2",
+      "type": "directory",
+      "children": [
+        {
+          "name": "invalid_odt_file.odt",
+          "type": "file",
+          "error": "Reading error. It might not be a valid ODT file. Error message: zip file is empty"
+        },
+        {
+          "name": "template_06.odt",
+          "type": "file",
+          "importBlocks": [
+            "[import block_1.odt]",
+            "[import footer_1.odt]",
+            "[import header_1.odt]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "template_aa01.odt",
+      "type": "file",
+      "importBlocks": [
+        "[import block_1.odt]",
+        "[import block_1a.odt]",
+        "[import footer_1.odt]",
+        "[import header_1.odt]"
+      ]
+    },
+    {
+      "name": "template_aa02.odt",
+      "type": "file",
+      "importBlocks": [
+        "[import block_1.odt]",
+        "[import footer_1.odt]",
+        "[import header_1.odt]"
+      ]
+    },
+    {
+      "name": "template_bb01.odt",
+      "type": "file",
+      "importBlocks": [
+        "[import block_2.odt]",
+        "[import footer_2.odt]",
+        "[import header_2.odt]"
+      ]
+    },
+    {
+      "name": "template_bb02.odt",
+      "type": "file",
+      "importBlocks": [
+        "[import block_1.odt]",
+        "[import footer_1.odt]",
+        "[import header_1.odt]"
+      ]
+    }
+  ]
+}

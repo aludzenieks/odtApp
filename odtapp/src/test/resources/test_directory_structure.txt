@@ -1,0 +1,9 @@
+test_directory/
+├── subdir1/
+│   ├── test_file1.odt
+│   ├── test_file2.txt
+├── subdir2/
+│   ├── subsubdir1/
+│   │   ├── test_file3.odt
+│   │   ├── test_file4.txt
+└── test_file5.odt
