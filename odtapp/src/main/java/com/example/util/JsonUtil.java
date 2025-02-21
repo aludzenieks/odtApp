@@ -1,8 +1,10 @@
 package com.example.util;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class JsonUtil {
@@ -15,17 +17,13 @@ public class JsonUtil {
      * @return true if JSON files are equal.
      */
     public static boolean areJsonFilesEqual(File file1, File file2) throws IOException {
-        // Create an ObjectMapper instance for reading the JSON files
-        ObjectMapper objectMapper = new ObjectMapper();
+        // Read the first JSON file into a JsonElement tree
+        JsonElement tree1 = JsonParser.parseReader(new FileReader(file1));
 
-        // Read the first JSON file into a JsonNode tree
-        JsonNode tree1 = objectMapper.readTree(file1);
+        // Read the second JSON file into a JsonElement tree
+        JsonElement tree2 = JsonParser.parseReader(new FileReader(file2));
 
-        // Read the second JSON file into a JsonNode tree
-        JsonNode tree2 = objectMapper.readTree(file2);
-
-        // Compare the two JsonNode trees and return the result
+        // Compare the two JsonElement trees and return the result
         return tree1.equals(tree2);
     }
-
 }
